@@ -1,0 +1,280 @@
+@use "./responsive";
+.second-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 147px;
+    margin-top: 150px;
+    
+  @include responsive.responsive-xs{
+    margin-right: 400px;
+    margin-bottom: 147px;
+   
+    padding-bottom: 0;
+    margin-top: 134px;
+    flex-direction: row-reverse;
+    justify-content: center;
+   
+    
+    
+}
+
+   .second-section-left{
+        position: relative;
+        margin-left: 140px;
+        margin-right: 124px;
+       
+        @include responsive.responsive-lg{
+            margin-left: 40px;
+            margin-right: 80px;
+        }
+
+        @include responsive.responsive-xs{
+            
+            margin-left: 275px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            
+            padding-bottom: 0;
+                        
+        }
+        
+    .rectangle{
+        width: 717px;
+        height: 153px;
+        position: absolute;
+        top: -40px;
+        right: -130px;
+        z-index: 0;
+        overflow: hidden;
+
+        @include responsive.responsive-xs{
+           width: 285px;
+           height: 68px;
+           top: -10px;
+           right: -55px
+         }
+    }
+    
+    h2{
+        font-size: 41px;
+        line-height: 45px;
+        font-weight: 500;
+        margin-top: 17px;
+        margin-bottom: 40px;
+        color: #647B64;
+        text-transform: uppercase;  
+
+        @include responsive.responsive-lg{
+            font-size: 20px;
+
+        }
+        
+        @include responsive.responsive-xs{
+            font-size: 22px;
+            line-height: 22px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+    }
+    p{
+        font-size: 16px;
+        margin-top: 0;
+        color: #4F4F4F; 
+
+        @include responsive.responsive-lg{
+            font-size: 14;
+        }
+        
+        @include responsive.responsive-xs{
+            font-size: 10px;
+            line-height: 13px;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        color:#FEFEFE ;
+
+        &:hover{
+            border:2px solid red;
+           }
+        
+        
+    }
+    .get-started-button {
+        background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+        width: 350px;
+        height: 73px;
+        padding: 26px 0 25px 29px;
+        position: relative;
+        margin-top: 40px;
+        border-radius: 2px;
+
+
+        &:hover{
+            box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.75);
+           }
+
+       
+       
+
+        @include responsive.responsive-xs{
+            margin-top: 16px;
+            width: 195px;
+            height: 41px;
+            padding: 15px 0px 14px 16px;
+            border-radius: 1px;
+            margin-bottom: 72px;
+        }
+        
+        &::after{
+            content: url(images/Vector.svg) ;
+            width: 22px;
+            height: 15px;
+            position: absolute;
+            top: 32px;
+            left: 308px;
+
+            @include responsive.responsive-xs{
+                content: url(/atsiskaitomasis_darbas_css/images/small-arrow.svg);
+                width: 11px;
+                height: 8px;
+                left: 177px;
+                top: 9px;
+             }
+        }
+        .button-text{
+            margin: 0;
+            font-size: 16px;
+            color: #FEFEFE;
+
+            @include responsive.responsive-xs{
+                font-size: 10px;
+                line-height: 13px;
+            }
+        } 
+        p{
+            color:#FEFEFE;
+        }     
+   }
+}
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 288px 288px;
+        grid-template-rows: 237px 237px;
+        margin-top: 201px;
+        height: 237px;
+        width: 288px;
+        border-radius: 8px;
+        margin-top: 0;
+        gap: 40px;
+
+        @include responsive.responsive-xs{
+           
+            border-radius: 4px;
+            grid-template-columns: 155px 155px;
+            grid-template-rows: 128px 128px;
+            margin-left: 35px;
+            margin-right: 0px;
+            width: max-content;
+            gap: 0;
+            height: max-content;
+            width: 311px;
+            margin-left: 260px;
+            
+            
+         }
+        @include responsive.responsive-lg{
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 150px 150px;
+
+        }
+        
+    }
+
+        .small-icon{
+            img{
+                padding: 10px;
+                background-color: #ffff;
+                box-shadow: 0px 4px 4px 0px #0000000A;
+                border-radius: 8px;
+    
+                
+                @include responsive.responsive-xs{
+                    display: none;
+                 }
+                   
+            }
+        }
+        
+        .small-icon .smart-car-small{
+            display: none;
+
+            @include responsive.responsive-xs{
+                display: block;
+                padding: 5px;
+                background-color: white;
+            }
+         }
+        p{
+            font-size: 14px;
+            margin: 0;
+            color: #4F4F4F;
+
+            @include responsive.responsive-xs{
+                font-size: 8px;
+                line-height: 11px;
+            }
+        }
+
+        h3{
+            font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #333333;
+                text-transform: uppercase;
+                margin: 16px 0 6px 0px;
+
+                @include responsive.responsive-xs{
+                font-size: 12px;
+                line-height: 14px;
+                }
+        }         
+        .same {
+            padding: 40px 27px 45px 40px;
+            position: relative;
+
+            .smart-car-color{
+                position: absolute;
+                top: 40px;
+                opacity: 0;
+            }
+            
+            &:hover .small-icon img{
+                background-color: #647B64;
+                opacity: 5;
+
+            }
+           
+            &:hover {
+            box-shadow: 0px 5.87px 31.33px 0px #9B94942B;
+                background-color: #ffff;
+                border-radius: 13px;
+                transition: all 1s;
+
+            @include responsive.responsive-xs{
+                padding: 22px 20px 24px 21px;
+                
+
+                .smart-car-color{
+                    opacity: 5;
+                }
+            }            
+        }
+    }
+}
